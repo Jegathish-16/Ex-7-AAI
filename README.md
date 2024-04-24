@@ -39,7 +39,6 @@ def preprocess_text(text):
 	return stemmed_words
 
 def generate_summary(text,num_sentences=3):
-
 	sentences= sent_tokenize(text)
 	preprocessed_text = preprocess_text(text)
 	# Calculate the frequency of each word
@@ -74,7 +73,7 @@ print(summary)
 ```
 
 
-<H3>Output</H3>
+### Output:
 ![output](1.png)
 
 <H3>Result:</H3>

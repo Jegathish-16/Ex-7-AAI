@@ -17,6 +17,7 @@ Step 5: Construct the main program to read the paragraph  and perform text summa
       - Generate and print the original text.<br>
       - Generate and print the text summary using the  Text Summarization function<br>
 <H3>Program:</H3>
+
 ```
 import nltk
 from nltk.corpus import stopwords
@@ -39,7 +40,6 @@ def preprocess_text(text):
 	return stemmed_words
 
 def generate_summary(text,num_sentences=3):
-
 	sentences= sent_tokenize(text)
 	preprocessed_text = preprocess_text(text)
 	# Calculate the frequency of each word
@@ -74,7 +74,7 @@ print(summary)
 ```
 
 
-<H3>Output</H3>
+### Output:
 ![output](1.png)
 
 <H3>Result:</H3>
